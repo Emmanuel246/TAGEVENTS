@@ -42,15 +42,15 @@ export default function Testimonials() {
     const prevSlide = () => scrollToSlide((currentIndex === 0 ? REVIEWS.length - 1 : currentIndex - 1));
 
     return (
-        <section id="testimonials" className="py-20 md:py-24 border-t border-black/10 relative group">
+        <section id="testimonials" className="py-20 md:py-24 border-t border-white/10 relative group">
             <div className="px-6 md:px-12 mb-12 flex justify-between items-center">
-                <h2 className="text-sm font-medium tracking-widest uppercase text-black/40">( TESTIMONIALS )</h2>
+                <h2 className="text-sm font-medium tracking-widest uppercase text-white/40">( TESTIMONIALS )</h2>
 
                 {/* Desktop Navigation Arrows */}
                 <div className="hidden md:flex gap-4">
                     <button
                         onClick={prevSlide}
-                        className="p-3 border border-black/10 rounded-full hover:bg-black/5 transition-colors"
+                        className="p-3 border border-white/10 rounded-full hover:bg-white/5 transition-colors"
                         aria-label="Previous testimonial"
                     >
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -59,7 +59,7 @@ export default function Testimonials() {
                     </button>
                     <button
                         onClick={nextSlide}
-                        className="p-3 border border-black/10 rounded-full hover:bg-black/5 transition-colors"
+                        className="p-3 border border-white/10 rounded-full hover:bg-white/5 transition-colors"
                         aria-label="Next testimonial"
                     >
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -78,15 +78,15 @@ export default function Testimonials() {
                 >
                     {REVIEWS.map((review, i) => (
                         <div key={i} className="w-[85vw] md:w-[50vw] flex-shrink-0 snap-center px-4 md:px-6">
-                            <div className="flex flex-col gap-8 h-full bg-black/5 hover:bg-black/10 transition-colors border border-black/10 rounded-3xl p-8 md:p-12">
-                                <p className="text-xl md:text-2xl font-light leading-snug tracking-tight text-black/90">
+                            <div className="flex flex-col gap-8 h-full bg-white/5 hover:bg-white/10 transition-colors border border-white/10 rounded-3xl p-8 md:p-12">
+                                <p className="text-xl md:text-2xl font-light leading-snug tracking-tight text-white/90">
                                     "{review.text}"
                                 </p>
-                                <div className="mt-auto pt-8 border-t border-black/10">
-                                    <span className="text-xs font-bold uppercase tracking-widest text-black/40">
+                                <div className="mt-auto pt-8 border-t border-white/10">
+                                    <span className="text-xs font-bold uppercase tracking-widest text-white/40">
                                         Client
                                     </span>
-                                    <h4 className="text-lg font-medium text-black/90 mt-1">
+                                    <h4 className="text-lg font-medium text-white/90 mt-1">
                                         {review.client}
                                     </h4>
                                 </div>
@@ -103,7 +103,7 @@ export default function Testimonials() {
                         <button
                             key={i}
                             onClick={() => scrollToSlide(i)}
-                            className={`h-1.5 transition-all duration-300 rounded-full ${currentIndex === i ? 'w-8 bg-black' : 'w-2 bg-black/20 hover:bg-black/40'}`}
+                            className={`h-1.5 transition-all duration-300 rounded-full ${currentIndex === i ? 'w-8 bg-white' : 'w-2 bg-white/20 hover:bg-white/40'}`}
                             aria-label={`Go to testimonial ${i + 1}`}
                         />
                     ))}
@@ -111,10 +111,10 @@ export default function Testimonials() {
 
                 {/* Mobile Navigation Arrows */}
                 <div className="flex md:hidden gap-3">
-                    <button onClick={prevSlide} className="p-2 border border-black/10 rounded-full active:bg-black/5">
+                    <button onClick={prevSlide} className="p-2 border border-white/10 rounded-full active:bg-white/5">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7" /></svg>
                     </button>
-                    <button onClick={nextSlide} className="p-2 border border-black/10 rounded-full active:bg-black/5">
+                    <button onClick={nextSlide} className="p-2 border border-white/10 rounded-full active:bg-white/5">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                     </button>
                 </div>

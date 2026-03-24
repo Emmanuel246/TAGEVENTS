@@ -16,9 +16,9 @@ const IMAGES = [
 
 export default function ImageSlideshow() {
     return (
-        <section className="py-16 md:py-20 border-t border-black/5 overflow-hidden bg-white">
+        <section className="py-16 md:py-20 border-t border-white/5 overflow-hidden">
             <div className="mb-12 px-6 md:px-12">
-                <h2 className="text-sm font-medium tracking-widest uppercase text-black/40">( VISUAL DIARY )</h2>
+                <h2 className="text-sm font-medium tracking-widest uppercase text-white/40">( VISUAL DIARY )</h2>
             </div>
 
             <div className="flex overflow-hidden">

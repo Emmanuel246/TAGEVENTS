@@ -8,7 +8,7 @@ const CAROUSEL_IMAGES = [
     { src: "/images/uploaded_image_0_1767994397675.jpg", rotation: -5, scale: 0.9, z: 10 },
     { src: "/images/uploaded_image_4_1767994397675.jpg", rotation: 5, scale: 1.1, z: 20 },
     { src: "/images/uploaded_image_3_1767994397675.jpg", rotation: -8, scale: 0.95, z: 15 },
-    { src: "/images/TS2_8700.jpg", rotation: 3, scale: 1.05, z: 25 },
+    { src: "/images/TS2_7859.jpg", rotation: 3, scale: 1.05, z: 25 },
     { src: "/images/uploaded_image_1_1767994397675.jpg", rotation: -3, scale: 1, z: 12 },
 ];
 
@@ -49,7 +49,7 @@ export default function HeroGallery() {
                                 left: `${leftPos}%`,
                                 top: `${45 + randomY}%`, // Center vertically roughly
                             }}
-                            className="absolute w-[45vw] md:w-[25vw] aspect-[3/4] shadow-2xl rounded-sm border-[6px] border-gray-100 bg-white transform -translate-x-1/2 -translate-y-1/2"
+                            className="absolute w-[45vw] md:w-[25vw] aspect-[3/4] shadow-2xl rounded-sm border-[6px] border-white/10 bg-black transform -translate-x-1/2 -translate-y-1/2"
                         >
                             <div className="relative w-full h-full overflow-hidden">
                                 <Image
@@ -68,7 +68,7 @@ export default function HeroGallery() {
             </div>
 
             {/* Gradient fade at bottom to blend */}
-            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent z-40" />
+            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent z-40" />
         </div>
     );
 }

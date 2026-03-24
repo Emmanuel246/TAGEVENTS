@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <SmoothScroll>
-      <main className="bg-white min-h-screen text-black font-sans selection:bg-black selection:text-white">
+      <main className="min-h-screen text-white font-sans selection:bg-white selection:text-black">
 
         <FloatingDock />
 
@@ -23,12 +23,12 @@ export default function Home() {
           {/* Quick Intro Teaser */}
           <section className="px-6 py-16 md:py-20 md:px-12 border-t border-white/10 flex flex-col md:flex-row items-center gap-8 text-center md:text-left justify-between">
             <div className="max-w-2xl">
-              <h2 className="text-3xl md:text-5xl font-light leading-tight mb-4 text-black/90">
+              <h2 className="text-3xl md:text-5xl font-light leading-tight mb-4 text-white/90">
                 Redefining the art of gathering.
               </h2>
-              <p className="text-black/60 text-lg">We create immersive environments that last in memory forever.</p>
+              <p className="text-white/60 text-lg">We create immersive environments that last in memory forever.</p>
             </div>
-            <Link href="/about" className="px-8 py-3 border border-black/20 rounded-full hover:bg-black hover:text-white transition-all uppercase tracking-widest text-sm">
+            <Link href="/about" className="px-8 py-3 border border-white/20 rounded-full hover:bg-white hover:text-black transition-all uppercase tracking-widest text-sm">
               Explore Our World
             </Link>
           </section>
