@@ -5,24 +5,34 @@ import { useState } from "react";
 
 const SERVICES = [
     {
-        title: "Event Design & Styling",
-        desc: "Full-scale aesthetic curation including floral design, custom furniture fabrication, and lighting architecture.",
-        tags: ["Decor", "Florals", "Lighting"]
+        title: "Event Planning & Coordination",
+        desc: "Comprehensive planning and execution from concept to completion. We handle the heavy lifting so you can focus on the celebration.",
+        tags: ["Strategy", "Execution", "Full-Service"]
     },
     {
-        title: "Technical Production",
-        desc: "Seamless audiovisual integration, stage design, and live show direction for high-impact moments.",
-        tags: ["Sound", "Visuals", "Staging"]
+        title: "Wedding Planning & Management",
+        desc: "Personalized wedding planning designed to bring your dream day to life. From mood boards to the final toast.",
+        tags: ["Weddings", "Styling", "Timelines"]
     },
     {
-        title: "Logistics & Management",
-        desc: "Precision timeline management, vendor coordination, and on-site execution for flawless delivery.",
-        tags: ["Planning", "Coordination", "Security"]
+        title: "Corporate Event Management",
+        desc: "Professional planning for conferences, launches, networking events, and corporate gatherings that reflect your brand excellence.",
+        tags: ["Conferences", "Launches", "Networking"]
     },
     {
-        title: "Venue Architecture",
-        desc: "Transforming raw spaces into bespoke environments through custom build-outs and spatial planning.",
-        tags: ["Build-outs", "Floorplans", "Permits"]
+        title: "Social Events",
+        desc: "Birthdays, anniversaries, and private celebrations tailored to your unique vision and personality.",
+        tags: ["Birthdays", "Anniversaries", "Private"]
+    },
+    {
+        title: "Event Styling & Experience Design",
+        desc: "Creating beautiful, immersive event experiences with thoughtful design, floral curation, and lighting architecture.",
+        tags: ["Design", "Aesthetics", "Atmosphere"]
+    },
+    {
+        title: "Vendor Coordination & Logistics",
+        desc: "Managing vendors, timelines, and event-day operations with precision and integrity.",
+        tags: ["Logistics", "Vendors", "Operations"]
     }
 ];
 

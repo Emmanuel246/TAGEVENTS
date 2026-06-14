@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import StarBackground from "@/components/StarBackground";
 
@@ -13,9 +13,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const cormorant = Cormorant_Garamond({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-cormorant",
+});
+
 export const metadata: Metadata = {
-  title: "TAGEVENTS | Crafting Unforgettable Experiences",
-  description: "The Assistant Guru Event Management Company - Planning. Precision. Perfect Timing.",
+  title: "TAG Events | Curating Refined experience for life's finest celebration.",
+  description: "The Assistant Guru (TAG) Events - Luxury Event Planning & Management Company. Curating Refined experience for life's finest celebration.",
 };
 
 export default function RootLayout({
@@ -26,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased selection:bg-white/20`}
+        className={`antialiased selection:bg-white/20 ${cormorant.variable}`}
       >
         <StarBackground />
         {children}

@@ -53,13 +53,16 @@ export default function AboutPage() {
                         <div className="absolute inset-0 bg-white/20" />
                     </div>
                     <div className="w-full md:w-2/3">
-                        <h3 className="text-3xl md:text-4xl font-light mb-6">The Curator's Note</h3>
+                        <h3 className="text-3xl md:text-4xl font-light mb-6">A Note From The Founder</h3>
                         <p className="text-white/80 leading-relaxed text-lg mb-8 italic">
-                            "We founded TAGEVENTS because we were bored of the standard. The white tablecloths, the generic centerpieces... it felt like a formula. We wanted to create events that felt like cinema."
+                            "Your event should never feel like pressure or confusion. It should feel beautiful from the very beginning to the final toast."
+                        </p>
+                        <p className="text-white/60 mb-8 max-w-xl">
+                            TAG Events was founded to create a better experience for clients who deserve clarity, integrity, and excellence throughout their planning journey. We remove stress, guide you through every step, and ensure your experience feels as wonderful as the event itself.
                         </p>
                         <div>
                             <p className="font-bold text-white tracking-widest uppercase">Oreoluwa Adedapo-Adigun</p>
-                            <p className="text-white/40 text-sm">Chief Executive Officer and Lead Planner</p>
+                            <p className="text-white/40 text-sm">Founder & Lead Planner</p>
                         </div>
                     </div>
                 </div>

@@ -45,6 +45,7 @@
   --color-muted: var(--muted);
   --font-sans: var(--font-br-firma);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-cormorant);
 }
 
 body {

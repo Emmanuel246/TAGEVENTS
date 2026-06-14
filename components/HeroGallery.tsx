@@ -9,7 +9,7 @@ const CAROUSEL_IMAGES = [
     { src: "/images/uploaded_image_4_1767994397675.jpg", rotation: 5, scale: 1.1, z: 20 },
     { src: "/images/uploaded_image_3_1767994397675.jpg", rotation: -8, scale: 0.95, z: 15 },
     { src: "/images/TS2_7859.jpg", rotation: 3, scale: 1.05, z: 25 },
-    { src: "/images/uploaded_image_1_1767994397675.jpg", rotation: -3, scale: 1, z: 12 },
+    { src: "/images/uploaded_image_1_1767994002744.jpg", rotation: -3, scale: 1, z: 12 },
 ];
 
 export default function HeroGallery() {

@@ -12,12 +12,12 @@ const REVIEWS = [
         text: "From start to finish, you were professional, organised, and incredibly attentive to every detail. Your calm approach and confidence gave me so much peace of mind throughout the entire process."
     },
     {
-        client: "Vogue",
-        text: "A masterclass in atmospheric design."
+        client: "Luxury Social Client",
+        text: "TAG Events transformed our vision into an unforgettable experience. Every detail was handled flawlessly."
     },
     {
-        client: "Forbes",
-        text: "Redefining luxury event management."
+        client: "Corporate Partner",
+        text: "The planning process was stress-free, organized, and enjoyable from start to finish. Highly professional service."
     },
 ];
 

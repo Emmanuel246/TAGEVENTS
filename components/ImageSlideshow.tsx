@@ -11,7 +11,7 @@ const IMAGES = [
     "/images/TS1_7919.jpg",
     "/images/uploaded_image_3_1767994397675.jpg",
     "/images/INN_0725.jpg",
-    "/images/uploaded_image_1_1767994397675.jpg",
+    "/images/uploaded_image_1_1767994002744.jpg",
 ];
 
 export default function ImageSlideshow() {

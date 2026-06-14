@@ -17,8 +17,14 @@ export default function Hero() {
     return (
         <section ref={containerRef} className="relative min-h-[100svh] md:h-[90vh] flex flex-col px-6 md:px-12 pb-32 md:py-0 overflow-hidden pt-28 md:pt-0">
             {/* Logo Placement */}
-            <div className="absolute top-6 md:top-8 left-6 md:left-12 z-50">
-                <Image src="/images/TAGLOGO.PNG" alt="TAGEVENTS" width={220} height={70} className="w-32 md:w-56 xl:w-64 object-contain brightness-0 invert" />
+            <div className="absolute top-4 md:top-8 left-4 md:left-12 z-50 pointer-events-none">
+                <Image 
+                    src="/images/taglogonew.png" 
+                    alt="The Assistant Guru Events" 
+                    width={200} 
+                    height={70} 
+                    className="w-32 md:w-40 xl:w-48 object-contain rounded-lg shadow-xl" 
+                />
             </div>
 
             {/* Mobile Image Layer (Sits below logo, above text) */}
@@ -37,29 +43,42 @@ export default function Hero() {
             </motion.div>
 
             {/* Text Content */}
-            <div className="relative z-20 flex flex-col justify-start md:justify-center h-full pb-6 md:pb-0 -mt-16 md:mt-0 px-2 md:px-0">
-                <h1 className="text-[12vw] sm:text-[11vw] md:text-[10vw] leading-[1] md:leading-[0.85] font-bold tracking-tighter text-white/90 md:mt-0 drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] md:drop-shadow-none mix-blend-normal">
-                    <motion.div initial={{ y: 50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, ease: [0.33, 1, 0.68, 1] }}>
-                        CRAFTING
-                    </motion.div>
-                    <motion.div initial={{ y: 50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 0.1, ease: [0.33, 1, 0.68, 1] }}>
-                        THE
-                    </motion.div>
-                    <motion.div initial={{ y: 50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 0.2, ease: [0.33, 1, 0.68, 1] }} className="text-white/40 text-[9.5vw] sm:text-[10vw] md:text-[10vw] -mt-[1vw] md:mt-0">
-                        UNFORGETTABLE
-                    </motion.div>
-                </h1>
-
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 1, duration: 1 }}
-                    className="max-w-sm text-sm text-white/60 tracking-wide leading-relaxed mt-6 md:absolute md:bottom-12 md:left-12 relative z-20"
+            <div className="relative z-20 flex flex-col justify-start md:justify-center h-full pb-6 md:pb-0 -mt-12 md:mt-0 px-2 md:px-0">
+                <motion.h1 
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.2, ease: [0.33, 1, 0.68, 1] }}
+                    className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-white/90 mb-8 max-w-4xl leading-[0.9]"
                 >
-                    <p>
-                        TAGEVENTS is a premier styling and planning agency curating atmospheric experiences for the modern world.
-                    </p>
-                </motion.div>
+                    Curating Refined experience for life's finest celebration.
+                </motion.h1>
+
+                <div className="flex flex-col md:flex-row items-start md:items-center gap-8 mt-8">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.8, duration: 1 }}
+                        className="max-w-xl text-sm md:text-base text-white/60 tracking-wide leading-relaxed relative z-20"
+                    >
+                        <p>
+                            At TAG Events, we transform your vision into beautifully curated experiences through thoughtful planning, clear communication, and flawless execution.
+                        </p>
+                    </motion.div>
+
+                    <motion.div 
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 1.2, duration: 1 }}
+                        className="flex flex-wrap gap-4 z-20"
+                    >
+                        <a href="/contact" className="px-8 py-4 bg-white text-black rounded-full font-bold uppercase tracking-widest text-xs hover:scale-105 transition-transform">
+                            Book a Consultation
+                        </a>
+                        <a href="/services" className="px-8 py-4 border border-white/20 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-black transition-all">
+                            View Services
+                        </a>
+                    </motion.div>
+                </div>
             </div>
         </section>
     );

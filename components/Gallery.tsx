@@ -11,7 +11,7 @@ const GALLERY_IMAGES = [
     { src: "/images/IMG_0346.JPG", span: "col-span-12 md:col-span-6", height: "h-[60vh]" },
     { src: "/images/uploaded_image_3_1767994002744.jpg", span: "col-span-12 md:col-span-5", height: "h-[70vh]" },
     { src: "/images/IMG_3267.JPG", span: "col-span-12 md:col-span-6", height: "h-[60vh]" },
-    { src: "/images/uploaded_image_0_1767994002744.jpg", span: "col-span-12 md:col-span-5", height: "h-[70vh]" },
+    { src: "/images/uploaded_image_0_1767994397675.jpg", span: "col-span-12 md:col-span-5", height: "h-[70vh]" },
     { src: "/images/TS2_7859.jpg", span: "col-span-12 md:col-span-5", height: "h-[70vh]" },
     { src: "/images/IMG_3270.JPG", span: "col-span-12 md:col-span-8", height: "h-[45vh]" },
     { src: "/images/IMG_7123.JPG", span: "col-span-12 md:col-span-8", height: "h-[45vh]" },

@@ -9,13 +9,19 @@ export default function About() {
                 <div className="w-full md:w-5/12">
                     <h2 className="text-sm font-medium tracking-widest uppercase text-white/40 mb-8">( ABOUT US )</h2>
                     <p className="text-xl md:text-2xl leading-relaxed text-white/80 font-light">
-                        TAGEVENTS is more than an event planning company; we are architects of memory. We believe that a truly great event is an art form—a temporary masterpiece built from light, sound, texture, and timing.
+                        At The Assistant Guru (TAG) Events, we believe every event should feel seamless, intentional, and deeply personal. We partner closely with our clients to ensure every event reflects their unique story.
                     </p>
                 </div>
-                <div className="w-full md:w-7/12 flex flex-col justify-end">
+                <div className="w-full md:w-7/12 flex flex-col justify-end gap-12">
                     <p className="text-lg text-white/50 leading-relaxed max-w-xl self-end text-right">
-                        Founded with a rebellious spirit and a lofty objective: to offer a superior, cinematic alternative to the predictable event industry.
+                        Our approach is simple: thoughtful planning, clear communication, and flawless execution. With a passion for excellence, we create standout events that leave lasting impressions.
                     </p>
+                    <div className="self-end text-right border-t border-white/10 pt-8 mt-8">
+                        <h3 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-4">Our Mission</h3>
+                        <p className="text-xl md:text-2xl font-light text-white/90 italic">
+                            "To bring structure, creativity, and professionalism to every event while delivering unforgettable experiences that exceed expectations."
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
