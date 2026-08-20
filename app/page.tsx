@@ -51,7 +51,7 @@ export default function Home() {
                 </div>
                 <div className="space-y-4">
                   <h3 className="text-2xl font-light text-white/90">Intentional Experiences</h3>
-                  <p className="text-white/50 leading-relaxed">Every detail is designed with purpose. We don't just decorate; we curate meaning.</p>
+                  <p className="text-white/50 leading-relaxed">Every detail is designed with purpose. We don&apos;t just decorate; we curate meaning.</p>
                 </div>
                 <div className="space-y-4">
                   <h3 className="text-2xl font-light text-white/90">Structured Process</h3>
@@ -62,7 +62,7 @@ export default function Home() {
                   <p className="text-white/50 leading-relaxed">Professionalism backed by strong values. We deliver on our promises with excellence.</p>
                 </div>
                 <div className="space-y-4 bg-white/5 p-8 rounded-2xl border border-white/10 flex flex-col justify-center">
-                   <p className="text-lg font-light italic text-white/80">"Your celebration deserves the TAG standard of excellence."</p>
+                   <p className="text-lg font-light italic text-white/80">&ldquo;Your celebration deserves the TAG standard of excellence.&rdquo;</p>
                 </div>
               </div>
             </div>

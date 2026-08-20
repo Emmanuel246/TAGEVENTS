@@ -32,7 +32,7 @@ export default function AboutPage() {
                             <span className="text-4xl md:text-5xl font-light text-white/20">02</span>
                             <h3 className="text-2xl font-medium text-white/90">Radical Atmosphere</h3>
                             <p className="text-white/60 leading-relaxed">
-                                We don't do "decor". We build worlds. Using light, shadow, and architectural structure, we transform venues into immersive environments that transport guests.
+                                We don&apos;t do &ldquo;decor&rdquo;. We build worlds. Using light, shadow, and architectural structure, we transform venues into immersive environments that transport guests.
                             </p>
                         </div>
                         <div className="space-y-4">
@@ -55,7 +55,7 @@ export default function AboutPage() {
                     <div className="w-full md:w-2/3">
                         <h3 className="text-3xl md:text-4xl font-light mb-6">A Note From The Founder</h3>
                         <p className="text-white/80 leading-relaxed text-lg mb-8 italic">
-                            "Your event should never feel like pressure or confusion. It should feel beautiful from the very beginning to the final toast."
+                            &ldquo;Your event should never feel like pressure or confusion. It should feel beautiful from the very beginning to the final toast.&rdquo;
                         </p>
                         <p className="text-white/60 mb-8 max-w-xl">
                             TAG Events was founded to create a better experience for clients who deserve clarity, integrity, and excellence throughout their planning journey. We remove stress, guide you through every step, and ensure your experience feels as wonderful as the event itself.

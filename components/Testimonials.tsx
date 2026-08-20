@@ -80,7 +80,7 @@ export default function Testimonials() {
                         <div key={i} className="w-[85vw] md:w-[50vw] flex-shrink-0 snap-center px-4 md:px-6">
                             <div className="flex flex-col gap-8 h-full bg-white/5 hover:bg-white/10 transition-colors border border-white/10 rounded-3xl p-8 md:p-12">
                                 <p className="text-xl md:text-2xl font-light leading-snug tracking-tight text-white/90">
-                                    "{review.text}"
+                                    &ldquo;{review.text}&rdquo;
                                 </p>
                                 <div className="mt-auto pt-8 border-t border-white/10">
                                     <span className="text-xs font-bold uppercase tracking-widest text-white/40">

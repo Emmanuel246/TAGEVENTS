@@ -1,6 +1,5 @@
 import Services from "@/components/Services";
 import FloatingDock from "@/components/FloatingDock";
-import Image from "next/image";
 
 export default function ServicesPage() {
     return (
@@ -84,7 +83,7 @@ export default function ServicesPage() {
                 </section>
 
                 <div className="mt-32 p-8 md:p-12 bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/10 text-center">
-                    <h3 className="text-2xl md:text-3xl font-light mb-6">Let's Bring Your Vision To Life</h3>
+                    <h3 className="text-2xl md:text-3xl font-light mb-6">Let&apos;s Bring Your Vision To Life</h3>
                     <p className="text-white/60 mb-8 max-w-2xl mx-auto italic">
                         Beautifully. Thoughtfully. Stress-Free.
                     </p>

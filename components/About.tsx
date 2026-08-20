@@ -1,7 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
-
 export default function About() {
     return (
         <section id="about" className="px-6 py-16 md:py-20 md:px-12 border-t border-white/10">
@@ -19,7 +15,7 @@ export default function About() {
                     <div className="self-end text-right border-t border-white/10 pt-8 mt-8">
                         <h3 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-4">Our Mission</h3>
                         <p className="text-xl md:text-2xl font-light text-white/90 italic">
-                            "To bring structure, creativity, and professionalism to every event while delivering unforgettable experiences that exceed expectations."
+                            &ldquo;To bring structure, creativity, and professionalism to every event while delivering unforgettable experiences that exceed expectations.&rdquo;
                         </p>
                     </div>
                 </div>

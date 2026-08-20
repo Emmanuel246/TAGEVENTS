@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
 
 const LINKS = [
     { name: "Home", href: "/" },
@@ -14,7 +13,6 @@ const LINKS = [
 ];
 
 export default function FloatingDock() {
-    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     const pathname = usePathname();
 
     return (
@@ -23,15 +21,13 @@ export default function FloatingDock() {
                 layout
                 className="flex items-center gap-1 md:gap-2 p-1 md:p-2 rounded-full bg-white/5 backdrop-blur-2xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.1)] overflow-x-auto no-scrollbar"
             >
-                {LINKS.map((link, i) => {
+                {LINKS.map((link) => {
                     const isActive = pathname === link.href;
 
                     return (
                         <Link
                             key={link.name}
                             href={link.href}
-                            onMouseEnter={() => setHoveredIndex(i)}
-                            onMouseLeave={() => setHoveredIndex(null)}
                             className={`
                     relative px-3 md:px-6 py-2.5 md:py-3 rounded-full transition-all duration-300 group whitespace-nowrap
                     ${isActive ? 'bg-white text-black' : 'hover:bg-white/5'}
