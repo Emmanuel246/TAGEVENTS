@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 
@@ -11,8 +11,11 @@ export default function Hero() {
     offset: ["start start", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+  const yTransform = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+  const opacityTransform = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+
+  const y = useSpring(yTransform, { stiffness: 80, damping: 25, mass: 0.5 });
+  const opacity = useSpring(opacityTransform, { stiffness: 80, damping: 25, mass: 0.5 });
 
   return (
     <section
@@ -22,7 +25,7 @@ export default function Hero() {
       {/* Logo Placement */}
       <div className="absolute top-4 md:top-8 left-4 md:left-12 z-50 pointer-events-none">
         <Image
-          src="/images/assistangGurublackndwhitelogo.png"
+          src="/images/assistantgururdeepwine.png"
           alt="The Assistant Guru Events"
           width={240}
           height={100}

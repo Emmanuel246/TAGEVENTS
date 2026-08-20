@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import FloatingDock from "@/components/FloatingDock";
+import ParallaxImage from "@/components/ParallaxImage";
 import Image from "next/image";
 
 export default function AboutPage() {
@@ -13,9 +14,12 @@ export default function AboutPage() {
 
                 <About />
 
-                <div className="w-full h-[60vh] relative my-24 rounded-sm overflow-hidden transition-all duration-700">
-                    <Image src="/images/TS1_5009.jpg" alt="Atmosphere" fill className="object-cover" />
-                </div>
+                <ParallaxImage 
+                    src="/images/TS1_5009.jpg" 
+                    alt="Atmosphere" 
+                    className="w-full h-[60vh] my-24 rounded-sm"
+                    speed={0.12}
+                />
 
                 {/* Core Values / Philosophy */}
                 <section className="mt-24 md:mt-32">
@@ -48,9 +52,13 @@ export default function AboutPage() {
                 {/* The Founder / Team Mockup */}
                 <div className="mt-24 md:mt-32 bg-white/5 backdrop-blur-xl p-6 sm:p-8 md:p-12 rounded-3xl border border-white/10 flex flex-col md:flex-row gap-8 md:gap-12 items-center">
                     <div className="w-full md:w-1/3 aspect-[3/4] bg-white/10 rounded-2xl relative overflow-hidden">
-                        {/* Placeholder for founder image - using a generic event image for now or placeholder */}
-                        <Image src="/images/oreoluwa.JPG" alt="Founder" fill className="object-cover" />
-                        <div className="absolute inset-0 bg-white/20" />
+                        <ParallaxImage 
+                            src="/images/oreoluwa.JPG" 
+                            alt="Founder" 
+                            className="absolute inset-0 w-full h-full"
+                            speed={0.08}
+                        />
+                        <div className="absolute inset-0 bg-white/10 pointer-events-none" />
                     </div>
                     <div className="w-full md:w-2/3">
                         <h3 className="text-3xl md:text-4xl font-light mb-6">A Note From The Founder</h3>
