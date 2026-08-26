@@ -36,7 +36,24 @@ export default function Hero() {
       {/* Mobile Image Layer (Sits below logo, above text) */}
       <motion.div
         style={{ y, opacity }}
-        className="relative md:absolute w-full h-[40vh] mt-4 mb-8 rounded-[2rem] overflow-hidden md:top-[20%] md:bottom-auto md:left-auto md:right-[5%] md:w-[40vw] md:h-[60vh] md:rounded-none z-0 md:mt-0 md:mb-0 transition-all duration-700 opacity-100 block"
+        className="
+  relative
+  w-full
+  h-[40vh]
+  mt-24
+  mb-10
+  rounded-[2rem]
+  overflow-hidden
+  md:absolute
+  md:top-[20%]
+  md:right-[5%]
+  md:w-[40vw]
+  md:h-[60vh]
+  md:rounded-none
+  md:mt-0
+  md:mb-0
+  z-0
+"
       >
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10 md:hidden pointer-events-none" />
         <Image
@@ -49,7 +66,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Text Content */}
-      <div className="relative z-20 flex flex-col justify-start md:justify-center h-full pb-6 md:pb-0 -mt-12 md:mt-0 px-2 md:px-0">
+      <div className="relative z-20 flex flex-col justify-start md:justify-center h-full pb-6 md:pb-0 mt-0 px-2 md:px-0">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
